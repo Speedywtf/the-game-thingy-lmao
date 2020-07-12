@@ -143,6 +143,8 @@ while name_loop ==3:
             print('')
             print("Two people cannot have the same name, please try again...")
             family_name(player_gender)   #Not running???? wtf xD
+    else: 
+        pass 
 
     name_loop += 1
 
@@ -170,9 +172,22 @@ optiontwo = 0
 
 #Stay inside home first option
 
-def sons_room(): 
+def sons_room():    #Check for errors pending
     print('')
+    time.sleep(1)
     sons_room_optiontwo = str(input("Do you (1) Wake him up or (2) Leave the room "))
+        if sons_room_optiontwo == str("1"): 
+            print("u gay")
+        elif sons_room_optiontwo == str("2"):
+            print("Your even gayer")
+        else: 
+            print("Invalid input, 1 to wake him up or 2 to leave room")
+            sons_room_optiontwo()
+
+    
+
+        
+
 
 
 #STARTING GAME FIRST OPTION
