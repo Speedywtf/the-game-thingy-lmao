@@ -6,13 +6,15 @@ TO DO LIST
   -INPUT AS STRING                                    DONE 
   -USE IF STATEMENT TO VALIDATE                       DONE
   -2 CHANCES THEN EXIT()                              NOT WORKING 
-        -TRY TO USE A WHILE LOOP, NESTED IF STATEMENTS DO NOT WORK  USED WHILE LOOP 
+        -TRY TO USE A WHILE LOOP, NESTED IF STATEMENTS DONE
   -MALE OR FEMALE ONLY OTHERS TOO MUCH CODING         DONE
 
 -MAKE FAMILY BASED ON GENDER INPUT                    DONE ALL 
      -WIFE SON DAUGHTER IF GENDER MALE 
      -HUSBAND SON DAUGHTER IF GENDER FEMALE
      -FOR NOW ONLY INPUT NAMES OF FAMILY NOT ATTRIBUTES 
+     -Finsish checking for errors too bs
+
 
 -FINSIH OPTIONONE                              
      -FINISH FOR optionone STAY AT HOME                
@@ -22,9 +24,9 @@ TO DO LIST
      -START OPTIONTWO AS A BRANCH OF OPTION ONE 
 	-OPTION TWO IF PLAYER DECIDES TO LEAVE THE HOUSE 
 
--FINISH sons_room FUNCTION 
+-FINISH sons_room FUNCTION  DONE BASIC, NEED TO DECIDE OUTCOMES 
+     -Do error checking 
 
--FINISH player_gender ERROR in lines 126, 99 DONE 
 
 -While loop for same name
      -ELSE function not being called 

@@ -122,6 +122,22 @@ def family_name(player_gender):
             print('')
             player_gender = str(input("Are you male or female? "))
             continue
+
+family_info = []
+
+if player_gender == str("male") or player_gender == str("Male"):  #Not tested 
+    family_info.append(wife_name)
+    family_info.append(son_name) 
+    family_info.appent(daughter_name)
+elif player_gender == str("female") or player_gender == str("Female"):  #fuck u
+    family_info.append(husband_name)
+    family_info.append(son_name)
+    family_info.appent(daughter_name)
+else: 
+    pass 
+
+
+ 
     
 family_name(player_gender)
 
@@ -176,20 +192,17 @@ def sons_room():    #Check for errors pending
     print('')
     time.sleep(1)
     sons_room_optiontwo = str(input("Do you (1) Wake him up or (2) Leave the room "))
-         if sons_room_optiontwo == str("1"): 
+        if sons_room_optiontwo == str("1"): 
             print("You woke " + son_name + " up, he gets very angry and tries to...") #FInish later 
-         elif sons_room_optiontwo == str("2"):
+        elif sons_room_optiontwo == str("2"):
             print("You leave " + sons_name + " in peace, and decide to leave his name.") 
-         else: 
-            print("Invalid input, 1 to wake him up or 2 to leave room")
+        else: 
+            print("Invalid input, 1 to wake him up or 2 to leave room") 
             sons_room_optiontwo()
 
     
 
         
-
-
-
 #STARTING GAME FIRST OPTION
 
 try:
@@ -213,4 +226,3 @@ except ValueError:
 
 
 first_choice(int(input("It is now morning, would you like to (1) Leave your house or (2) Do some chores? ")))  #CALLING FUNCTION WITH A PROMPT 
-
