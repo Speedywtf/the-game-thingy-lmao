@@ -24,5 +24,8 @@ TO DO LIST
 
 -FINISH sons_room FUNCTION 
 
--FINISH player_gender ERROR in lines 126, 99 
+-FINISH player_gender ERROR in lines 126, 99 DONE 
+
+-While loop for same name
+     -ELSE function not being called 
      -
