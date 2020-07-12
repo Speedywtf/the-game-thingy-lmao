@@ -176,11 +176,11 @@ def sons_room():    #Check for errors pending
     print('')
     time.sleep(1)
     sons_room_optiontwo = str(input("Do you (1) Wake him up or (2) Leave the room "))
-        if sons_room_optiontwo == str("1"): 
-            print("u gay")
-        elif sons_room_optiontwo == str("2"):
-            print("Your even gayer")
-        else: 
+         if sons_room_optiontwo == str("1"): 
+            print("You woke " + son_name + " up, he gets very angry and tries to...") #FInish later 
+         elif sons_room_optiontwo == str("2"):
+            print("You leave " + sons_name + " in peace, and decide to leave his name.") 
+         else: 
             print("Invalid input, 1 to wake him up or 2 to leave room")
             sons_room_optiontwo()
 
