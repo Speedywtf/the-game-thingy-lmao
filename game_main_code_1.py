@@ -1,7 +1,11 @@
 import time 
 
+player_input_value = open("Userinput.txt", "wt")
+player_input_value.write("Here are all the palyer input values")
+
 """STARTING 
 ISTABLISHING BASIC VARIABLES SUCH AS PLAYERS USERNAME"""
+
 
 print('') 
 print('Hey there!')
@@ -25,6 +29,22 @@ background_information = "You are a ordinary Joe going about living your life, g
 
 #optiontwo prompt, do it if leave house
 
+if player_gender == str("Male") or player_gender == str("male"):
+    player_input_value.write("Here are all the palyer input values")
+    player_input_value.write("Player Username: " + player_name)
+    player_input_value.write("Player Gender: " + player_gender)
+    player_input_value.write("Player Wife Name: " + wife_name)
+    player_input_value.write("Player Son Name: " + son_name)
+    player_input_value.write("Player Daughter Name: " + daughter_name)
+elif player_gender == str("female") or player_gender == str("Female"): 
+    player_input_value.write("Here are all the palyer input values")
+    player_input_value.write("Player Username: " + player_name)
+    player_input_value.write("Player Gender: " + player_gender)
+    player_input_value.write("Player Husband Name: " + husband_name)
+    player_input_value.write("Player Son Name: " + son_name)
+    player_input_value.write("Player Daughter Name: " + daughter_name)
+elif 
+    pass 
 
 """def option_two_choice():
      if option_two == str("1"): 
@@ -205,6 +225,15 @@ def sons_room():    #Check for errors pending, Finish
         print("Invalid input, 1 to wake him up or 2 to leave room") 
         sons_room_optiontwo()
 
+
+def gender_call(): 
+    if player_gender == str("male") or player_gender == str("Male"): 
+        return("Sir")
+    elif player_gender == str("female") or player_gender == str("Female"): 
+        return("Ma'am")
+    else: 
+        pass
+
 #Deciding to go out the house first option 
    
 def out_of_house(): 
@@ -215,7 +244,14 @@ def out_of_house():
     if outside_one_prompt == str("1"): 
         time.sleep(1)
         print('')
-        print("gae")
+        print("You have decided to leave the poor old bird on the pavement. You walk towards your workplace as you get stopped by a stranger")
+        print('')
+        time.sleep(1)
+        print(".....Hello, " + gender_call() + "!") 
+        print('')
+        time.sleep(0.5)
+        print("\033[1;31;40m Hello! \n")
+        print("\033[1;32;40m I stopped you because I have a certain object I got given to deliver to you  \n")
     elif outside_one_prompt == str("2"): 
         time.sleep(1)
         print('')
@@ -249,3 +285,4 @@ except ValueError:
 
 
 first_choice(int(input("It is now morning, would you like to (1) Leave your house or (2) Do some chores? ")))  #CALLING FUNCTION WITH A PROMPT 
+
