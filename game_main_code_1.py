@@ -1,7 +1,8 @@
 import time 
+import os
 
 player_input_value = open("Userinput.txt", "wt")
-player_input_value.write("Here are all the palyer input values")
+
 
 """STARTING 
 ISTABLISHING BASIC VARIABLES SUCH AS PLAYERS USERNAME"""
@@ -29,25 +30,7 @@ background_information = "You are a ordinary Joe going about living your life, g
 
 #optiontwo prompt, do it if leave house
 
-def save_user_input(player_gender):
-    if player_gender == str("Male") or player_gender == str("male"):
-        player_input_value.write("Here are all the palyer input values")
-        player_input_value.write("Player Username: " + player_name)
-        player_input_value.write("Player Gender: " + player_gender)
-        player_input_value.write("Player Wife Name: " + wife_name)
-        player_input_value.write("Player Son Name: " + son_name)
-        player_input_value.write("Player Daughter Name: " + daughter_name)
-    elif player_gender == str("female") or player_gender == str("Female"): 
-        player_input_value.write("Here are all the palyer input values")
-        player_input_value.write("Player Username: " + player_name)
-        player_input_value.write("Player Gender: " + player_gender)
-        player_input_value.write("Player Husband Name: " + husband_name)
-        player_input_value.write("Player Son Name: " + son_name)
-        player_input_value.write("Player Daughter Name: " + daughter_name)
-    else: 
-        pass 
-
-    save_user_input(player_gender)
+    
 
 """def option_two_choice():
      if option_two == str("1"): 
@@ -117,6 +100,11 @@ loop_end = 3
 
 player_gender = str(input("Are you male or female? "))
 
+try:
+    os.remove("Userinputs.txt")
+except FileNotFoundError: 
+    f = open("Userinputs.txt", "x") 
+
 def family_name(player_gender):
     while loop_end == 3:          #ELSE STATEMENT DOES NOT WORK 
         if player_gender == str("Male") or player_gender == str("male"): 
@@ -129,7 +117,7 @@ def family_name(player_gender):
             print('')
             global daughter_name
             daughter_name = str(input("Whats your daughters name? "))
-            break
+            break        
         elif player_gender == str("Female") or player_gender == str("female"): 
             print('')
             global husband_name 
@@ -145,6 +133,8 @@ def family_name(player_gender):
             print('')
             player_gender = str(input("Are you male or female? "))
             continue
+
+
 
 family_info = []
 
@@ -253,8 +243,10 @@ def out_of_house():
         print(".....Hello, " + gender_call() + "!") 
         print('')
         time.sleep(0.5)
-        print("\033[1;31;40m Hello! \n")
-        print("\033[1;32;40m I stopped you because I have a certain object I got given to deliver to you  \n")
+        print("Hello!")
+        print('')
+        time.sleep(1)
+        print("I stopped you because I have a certain object I got given to deliver to you")
     elif outside_one_prompt == str("2"): 
         time.sleep(1)
         print('')
