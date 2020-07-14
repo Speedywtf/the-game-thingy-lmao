@@ -29,22 +29,25 @@ background_information = "You are a ordinary Joe going about living your life, g
 
 #optiontwo prompt, do it if leave house
 
-if player_gender == str("Male") or player_gender == str("male"):
-    player_input_value.write("Here are all the palyer input values")
-    player_input_value.write("Player Username: " + player_name)
-    player_input_value.write("Player Gender: " + player_gender)
-    player_input_value.write("Player Wife Name: " + wife_name)
-    player_input_value.write("Player Son Name: " + son_name)
-    player_input_value.write("Player Daughter Name: " + daughter_name)
-elif player_gender == str("female") or player_gender == str("Female"): 
-    player_input_value.write("Here are all the palyer input values")
-    player_input_value.write("Player Username: " + player_name)
-    player_input_value.write("Player Gender: " + player_gender)
-    player_input_value.write("Player Husband Name: " + husband_name)
-    player_input_value.write("Player Son Name: " + son_name)
-    player_input_value.write("Player Daughter Name: " + daughter_name)
-elif 
-    pass 
+def save_user_input(player_gender):
+    if player_gender == str("Male") or player_gender == str("male"):
+        player_input_value.write("Here are all the palyer input values")
+        player_input_value.write("Player Username: " + player_name)
+        player_input_value.write("Player Gender: " + player_gender)
+        player_input_value.write("Player Wife Name: " + wife_name)
+        player_input_value.write("Player Son Name: " + son_name)
+        player_input_value.write("Player Daughter Name: " + daughter_name)
+    elif player_gender == str("female") or player_gender == str("Female"): 
+        player_input_value.write("Here are all the palyer input values")
+        player_input_value.write("Player Username: " + player_name)
+        player_input_value.write("Player Gender: " + player_gender)
+        player_input_value.write("Player Husband Name: " + husband_name)
+        player_input_value.write("Player Son Name: " + son_name)
+        player_input_value.write("Player Daughter Name: " + daughter_name)
+    else: 
+        pass 
+
+    save_user_input(player_gender)
 
 """def option_two_choice():
      if option_two == str("1"): 
