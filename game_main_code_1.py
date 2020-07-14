@@ -125,16 +125,19 @@ def family_name(player_gender):
 
 family_info = []
 
-if player_gender == str("male") or player_gender == str("Male"):  #Not tested 
-    family_info.append(wife_name)
-    family_info.append(son_name) 
-    family_info.appent(daughter_name)
-elif player_gender == str("female") or player_gender == str("Female"):  #fuck u
-    family_info.append(husband_name)
-    family_info.append(son_name)
-    family_info.appent(daughter_name)
-else: 
-    pass 
+def List_Add(wife_name, husband_name, son_name, daughter_name):
+    if player_gender == str("male") or player_gender == str("Male"):  #Not tested 
+        family_info.append(wife_name)
+        family_info.append(son_name) 
+        family_info.appent(daughter_name)
+        print(family_info)
+    elif player_gender == str("female") or player_gender == str("Female"):  #fuck u
+        family_info.append(husband_name)
+        family_info.append(son_name)
+        family_info.appent(daughter_name)
+        print(family_info)
+    else: 
+        pass 
 
 
  
@@ -188,21 +191,40 @@ optiontwo = 0
 
 #Stay inside home first option
 
-def sons_room():    #Check for errors pending
+def sons_room():    #Check for errors pending, Finish 
     print('')
     time.sleep(1)
     sons_room_optiontwo = str(input("Do you (1) Wake him up or (2) Leave the room "))
-        if sons_room_optiontwo == str("1"): 
-            print("You woke " + son_name + " up, he gets very angry and tries to...") #FInish later 
-        elif sons_room_optiontwo == str("2"):
-            print("You leave " + sons_name + " in peace, and decide to leave his name.") 
-        else: 
-            print("Invalid input, 1 to wake him up or 2 to leave room") 
-            sons_room_optiontwo()
+    if sons_room_optiontwo == str("1"): 
+        print('')
+        time.sleep(1)
+        print("You woke " + son_name + " up, he gets very angry and tries to...") #FInish later 
+    elif sons_room_optiontwo == str("2"):
+        print("You leave " + son_name + " in peace, and decide to leave his name.") 
+    else: 
+        print("Invalid input, 1 to wake him up or 2 to leave room") 
+        sons_room_optiontwo()
 
-    
+#Deciding to go out the house first option 
+   
+def out_of_house(): 
+    time.sleep(1)
+    print('')
+    global outside_one_prompt
+    outside_one_prompt = str(input("You go out and spot an injured bird on the pavement, do you (1) Leave it there or (2) Take it to the vet? "))
+    if outside_one_prompt == str("1"): 
+        time.sleep(1)
+        print('')
+        print("gae")
+    elif outside_one_prompt == str("2"): 
+        time.sleep(1)
+        print('')
+        print("You have decided to take it to the vet...")
+    else: 
+        time.sleep(1)
+        print('')
+        print("Invalid input, 1 for Ignoring the bird and 2 for Taking it the the vet... Please try again")
 
-        
 #STARTING GAME FIRST OPTION
 
 try:
@@ -211,6 +233,7 @@ try:
             time.sleep(1)
             print('')
             print("You have chosen to get out of the house for once")  #optiontwo still finish 
+            out_of_house()
          elif optionone == 2: 
             time.sleep(1)
             print('')
