@@ -30,23 +30,6 @@ background_information = "You are a ordinary Joe going about living your life, g
 
 #optiontwo prompt, do it if leave house
 
-    
-
-"""def option_two_choice():
-     if option_two == str("1"): 
-        time.sleep(1)
-        print('')
-        print("You carry the bird to the vet, and carry on your day...")
-     elif option_two == str("2"): 
-        time.sleep(1)
-        print('')
-        print("You leave the bird, and carry on with your day...")
-     else: 
-        print("Please chose a valid option, either 1 to help the bird or 2 to leave it")
-        option_two_choice( )""" 
-
-    
-
 
 #STARTING MORNING 
 
@@ -106,7 +89,7 @@ except FileNotFoundError:
     f = open("Userinputs.txt", "x") 
 
 def family_name(player_gender):
-    while loop_end == 3:          #ELSE STATEMENT DOES NOT WORK 
+    while loop_end == 3:          #WORKING
         if player_gender == str("Male") or player_gender == str("male"): 
             print('')
             global wife_name
@@ -129,7 +112,7 @@ def family_name(player_gender):
             break
         else: 
             print('')
-            print("That is not a valid input, input male for male or female or female")
+            print("That is not a valid input, input male for male or female for female")
             print('')
             player_gender = str(input("Are you male or female? "))
             continue
@@ -166,7 +149,7 @@ while name_loop <= 6:  #DONE ERROR CHECKED
             time.sleep(1)
             print('')
             print("Two people cannot have the same name, please try again...") 
-            family_name(player_gender)  #trynna make a game
+            family_name(player_gender) 
             if name_loop >= 6: 
                 print('')
                 time.sleep(1)
@@ -186,19 +169,16 @@ while name_loop <= 6:  #DONE ERROR CHECKED
         name_loop += 1 
 
         pass 
-       
+    
 
-   
+starting()     
 
-
-starting()       #ALL WORKING UNTILL HERE
-
-optionone = 0    #DEFINING BOTH VARIABLES 
+optionone = 0    
 optiontwo = 0
 
 #Stay inside home first option
 
-def sons_room():    #Check for errors pending, Finish 
+def sons_room():    #Check for errors pending, Finish print statements 
     print('')
     time.sleep(1)
     sons_room_optiontwo = str(input("Do you (1) Wake him up or (2) Leave the room "))
@@ -253,7 +233,7 @@ def out_of_house():
 #STARTING GAME FIRST OPTION
 
 try:
-    def first_choice(optionone):        #NOT WORKING DOING ELSE COMMAND FOR 1 INPUT
+    def first_choice(optionone):        
          if optionone == 1: 
             time.sleep(1)
             print('')
