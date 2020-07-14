@@ -5,7 +5,7 @@ TO DO LIST
 -MAKE A GENDER USER INPUT 
   -INPUT AS STRING                                    DONE 
   -USE IF STATEMENT TO VALIDATE                       DONE
-  -2 CHANCES THEN EXIT()                              NOT WORKING 
+  -2 CHANCES THEN EXIT()                              DONE
         -TRY TO USE A WHILE LOOP, NESTED IF STATEMENTS DONE
   -MALE OR FEMALE ONLY OTHERS TOO MUCH CODING         DONE
 
@@ -14,6 +14,7 @@ TO DO LIST
      -HUSBAND SON DAUGHTER IF GENDER FEMALE
      -FOR NOW ONLY INPUT NAMES OF FAMILY NOT ATTRIBUTES 
      -Finsish checking for errors too bs
+     -Use REGEX to check the names
 
 
 -FINSIH OPTIONONE                              

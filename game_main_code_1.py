@@ -157,16 +157,24 @@ def List_Add(wife_name, husband_name, son_name, daughter_name):
     
 family_name(player_gender)
 
-name_loop = 3 
+name_loop = 3
 
 
-while name_loop ==3: 
+while name_loop <= 6:  #DONE ERROR CHECKED 
     if player_gender == str("Male") or player_gender == str("male"):
         if player_name == wife_name or player_name == son_name or player_name == daughter_name or wife_name == son_name or wife_name== daughter_name or son_name == daughter_name: 
             time.sleep(1)
             print('')
             print("Two people cannot have the same name, please try again...") 
-            family_name
+            family_name(player_gender)  #trynna make a game
+            if name_loop >= 6: 
+                print('')
+                time.sleep(1)
+                print("Come on dude how hard is it to give people different names? im shutting off")
+                exit()
+            else: 
+                pass 
+            name_loop += 1
         else:
              pass 
     elif player_gender == str("Female") or player_gender == str("female"): 
@@ -174,25 +182,11 @@ while name_loop ==3:
             time.sleep(1)
             print('')
             print("Two people cannot have the same name, please try again...")
-            family_name(player_gender)   #Not running???? wtf xD
-    else: 
+            family_name(player_gender)   
+        name_loop += 1 
+
         pass 
-
-    name_loop += 1
-
-    if name_loop >= 6:
-        time.sleep(1)
-        print('') 
-        print("Too many invalid inputs, game shutting down")
-        time.sleep(0.3)
-        print(".")
-        time.sleep(0.3)
-        print("..")
-        time.sleep(0.3)
-        print("...")
-        exit()
-    else: 
-        continue
+       
 
    
 
